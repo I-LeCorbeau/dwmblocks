@@ -9,7 +9,7 @@ static const Block blocks[] = {
 
 	{"", "~/.build/dwmblocks/modules/volume",		0,		10},
 	
-	{"", "~/.build/dwmblocks/modules/clock",		1,		0},
+	{"", "~/.build/dwmblocks/modules/clock",		30,		0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
