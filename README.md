@@ -1,3 +1,5 @@
+_Apologies to torrinfail for trying to push this to their repo. I forgot to run git init before pushing this fork to my own repository._
+
 # dwmblocks
 Modular status bar for dwm written in c.
 # modifying blocks
