@@ -1,0 +1,19 @@
+#!/bin/bash
+
+connection=$(ip route | awk '/default/ { print $5 }')
+conntype=$(ip route | awk '/default/ { print substr($5,1,length($5)-3) }')
+#state=$(grep -i Up /sys/class/net/$connection/operstate)
+
+if [[ $conntype == "enp" ]]; then
+	if [[ -z "$connection" ]]; then
+		echo "  down "
+	else
+		echo "  up "
+	fi
+elif [[ $conntype == "wlp" ]]; then
+	if [[ -z $connection ]]; then
+		echo "  down "
+	else 
+		echo "  up "
+	fi
+fi

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+chkupd=$(checkupdates | wc -l)
+printf "  $chkupd (upd.) "

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+conntype=$(ip route | awk '/default/ { print substr($5,1,length($5)-3) }')
+
+if [ -z "$conntype" ]; then
+	echo " down "
+elif [ "$conntype" = "enp" ]; then
+	echo "  up "
+elif [ "$conntype" = "wlp" ]; then
+	echo "  up "
+fi
