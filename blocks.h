@@ -7,7 +7,7 @@ static const Block blocks[] = {
 
 	{"", "~/.build/dwmblocks/modules/network",		5,		8},
 
-	{"", "~/.build/dwmblocks/modules/volume",		0,		10},
+	{"", "~/.build/dwmblocks/modules/volume_alsa",		0,		10},
 	
 	{"", "~/.build/dwmblocks/modules/clock",		30,		0},
 };
