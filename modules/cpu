@@ -7,4 +7,3 @@
   total=$((a+b+c+idle))
   cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
   echo "  $cpu% "
- 
